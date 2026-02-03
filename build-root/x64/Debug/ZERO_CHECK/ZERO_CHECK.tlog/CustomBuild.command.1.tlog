@@ -1,0 +1,10 @@
+^E:\LEI\AI-PROJECT\QCODER\T2\BUILD-ROOT\CMAKEFILES\9F9F1C8AB206CC3A3EC8A3BEBD209BD1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/lei/ai-project/qcoder/t2 -BE:/lei/ai-project/qcoder/t2/build-root --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/lei/ai-project/qcoder/t2/build-root/MyEngine.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

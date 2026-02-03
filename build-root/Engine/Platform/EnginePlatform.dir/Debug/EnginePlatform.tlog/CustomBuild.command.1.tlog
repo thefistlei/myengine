@@ -1,0 +1,10 @@
+^E:\LEI\AI-PROJECT\QCODER\T2\ENGINE\PLATFORM\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/lei/ai-project/qcoder/t2 -BE:/lei/ai-project/qcoder/t2/build-root --check-stamp-file E:/lei/ai-project/qcoder/t2/build-root/Engine/Platform/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
